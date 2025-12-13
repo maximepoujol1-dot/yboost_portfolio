@@ -170,9 +170,9 @@ footer {
 @media (max-width: 860px)  { .grid { grid-template-columns: 1fr 1fr; } .projects-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px)  { .grid, .projects-grid { grid-template-columns: 1fr; } .nav { flex-wrap: wrap; } }
 
-/* Optionnel: avatar image si tu ajoutes images/avatar.jpg */
+/* Optionnel: avatar image si tu ajoutes assets/images/avatar.jpg */
 .brand .avatar {
-	background: center/cover no-repeat url('images/avatar.jpg'),
+	background: center/cover no-repeat url('../images/avatar.jpg'),
 		linear-gradient(135deg, var(--primary), #22c55e);
 }
 
