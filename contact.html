@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact — Maxime Poujol</title>
+	<meta name="description" content="Contactez Maxime Poujol">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<nav class="nav container" aria-label="Navigation principale">
+		<div class="brand">
+			<div class="avatar" aria-hidden="true"></div>
+			<span>Maxime Poujol</span>
+		</div>
+		<div class="links" role="menubar" aria-label="Liens de section">
+			<a href="a-propos.html" role="menuitem">À propos</a>
+			<a href="competences.html" role="menuitem">Compétences</a>
+			<a href="projets.html" role="menuitem">Projets</a>
+			<a href="contact.html" role="menuitem" aria-current="page">Contact</a>
+		</div>
+		<div class="actions">
+			<button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+		</div>
+	</nav>
+</header>
+
+<main class="container">
+	<section id="contact" class="section">
+		<h2>Contact</h2>
+		<div class="card reveal">
+			<form id="contactForm" novalidate>
+				<div class="field" id="f-name">
+					<label for="name">Nom</label>
+					<input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required minlength="2" />
+					<span class="error">Entrez au moins 2 caractères.</span>
+				</div>
+				<div class="field" id="f-email">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="vous@example.com" autocomplete="email" required />
+					<span class="error">Entrez un email valide.</span>
+				</div>
+				<div class="field" id="f-message">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" placeholder="Votre message" required minlength="10"></textarea>
+					<span class="error">Entrez au moins 10 caractères.</span>
+				</div>
+				<p class="help">La validation est en temps réel. Aucune donnée n’est envoyée (démo).</p>
+				<div style="display:flex; gap:10px; align-items:center;">
+					<button type="submit" class="btn btn-primary">Envoyer</button>
+					<span id="formStatus" aria-live="polite"></span>
+				</div>
+			</form>
+		</div>
+	</section>
+</main>
+
+<footer class="container">
+	<div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+		<span id="footerNote"></span>
+		<span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
+	</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

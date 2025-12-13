@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>À propos — Maxime Poujol</title>
+	<meta name="description" content="À propos de Maxime Poujol">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<nav class="nav container" aria-label="Navigation principale">
+		<div class="brand">
+			<div class="avatar" aria-hidden="true"></div>
+			<span>Maxime Poujol</span>
+		</div>
+		<div class="links" role="menubar" aria-label="Liens de section">
+			<a href="a-propos.html" role="menuitem" aria-current="page">À propos</a>
+			<a href="competences.html" role="menuitem">Compétences</a>
+			<a href="projets.html" role="menuitem">Projets</a>
+			<a href="contact.html" role="menuitem">Contact</a>
+		</div>
+		<div class="actions">
+			<button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+		</div>
+	</nav>
+</header>
+
+<main class="container">
+	<section class="section" id="a-propos">
+		<h2>À propos</h2>
+		<div class="card reveal">
+			<p>Je m’appelle Maxime. Ce site est en HTML, CSS et JS “vanilla” pour maîtriser les bases.</p>
+			<p>Je suis professionnel, polyvalent, sérieux et motivé. Habitué à travailler en équipe comme en autonomie, prêt à m’investir pleinement et à développer mes compétences.</p>
+			<p class="help">Astuce: le code inclut carrousel, filtrage, mode sombre et validation.</p>
+		</div>
+	</section>
+</main>
+
+<footer class="container">
+	<div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+		<span id="footerNote"></span>
+		<span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
+	</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

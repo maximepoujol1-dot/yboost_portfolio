@@ -25,7 +25,6 @@
 	--shadow: 0 10px 24px rgba(2,6,23,0.08);
 	--ring: 0 0 0 3px rgba(79,70,229,0.25);
 }
-
 * { box-sizing: border-box; }
 html, body {
 	margin: 0; padding: 0;
@@ -44,10 +43,15 @@ header {
 }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; }
 .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
-.brand .avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), #22c55e); box-shadow: var(--shadow); }
+.brand .avatar {
+	width: 40px; height: 40px; border-radius: 50%;
+	background: linear-gradient(135deg, var(--primary), #22c55e);
+	box-shadow: var(--shadow);
+}
 .nav a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 10px; }
 .nav a:hover, .nav a:focus { color: var(--text); background: color-mix(in oklab, var(--primary) 14%, transparent); outline: none; }
 .actions { display: flex; align-items: center; gap: 10px; }
+
 .btn {
 	border: 1px solid var(--border); background: var(--bg-soft); color: var(--text);
 	padding: 10px 14px; border-radius: 12px; cursor: pointer;
@@ -115,7 +119,19 @@ h1 { margin: 10px 0 8px; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .project { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--bg-soft); transition: transform .15s ease, opacity .2s ease; }
 .project.hide { opacity: 0; transform: scale(.98); pointer-events: none; }
-.project .cover { height: 140px; background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 35%, transparent), color-mix(in oklab, var(--bg) 85%, var(--bg-soft))); }
+
+/* Images de projet (nouveau: <img>) */
+.project .cover {
+	display: block;
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+	border-bottom: 1px solid var(--border);
+	background: linear-gradient(135deg,
+		color-mix(in oklab, var(--primary) 35%, transparent),
+		color-mix(in oklab, var(--bg) 85%, var(--bg-soft))
+	);
+}
 .project .content { padding: 12px; }
 .project .meta { color: var(--muted); font-size: 13px; }
 
@@ -153,3 +169,19 @@ footer {
 @media (max-width: 1024px) { .hero { grid-template-columns: 1fr; } .slide { grid-template-columns: 1fr; } }
 @media (max-width: 860px)  { .grid { grid-template-columns: 1fr 1fr; } .projects-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px)  { .grid, .projects-grid { grid-template-columns: 1fr; } .nav { flex-wrap: wrap; } }
+
+/* Optionnel: avatar image si tu ajoutes images/avatar.jpg */
+.brand .avatar {
+	background: center/cover no-repeat url('images/avatar.jpg'),
+		linear-gradient(135deg, var(--primary), #22c55e);
+}
+
+/* Images dans le carrousel (option A) */
+.slide .thumb-img {
+	width: 100%;
+	aspect-ratio: 16/10;
+	border-radius: 12px;
+	border: 1px solid var(--border);
+	object-fit: cover;
+	display: block;
+}
