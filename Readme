@@ -1,0 +1,38 @@
+Portfolio de Maxime Poujol
+===========================
+
+Présentation
+------------
+Site statique (HTML/CSS/JS) présentant le parcours, les compétences et les projets. Interface responsive avec bascule de thème clair/sombre, animations d'apparition, carrousel et filtrage des projets.
+
+Structure
+---------
+- assets/
+	- css/style.css : styles, thème clair/sombre, grilles, cartes, animations.
+	- js/main.js : logique UI (toggle de thème, compteur de visites, reveal on scroll, carrousel, filtres, validation formulaire).
+	- images/ : visuels projets et avatar optionnel.
+- front/
+	- index.html : page d'accueil (avec le liens vers autres pages).
+	- a-propos.html : présentation.
+	- competences.html : hard skills, soft skills, outils.
+	- projets.html : carrousel, grille filtrable par statut et catégorie.
+	- contact.html : formulaire avec validation et état d'envoi.
+
+Utilisation locale
+------------------
+1) Cloner le repository dans un éditeur de code 
+2) Ouvrir front/index.html dans un navigateur (double-clic ou via un serveur statique).
+3) Naviguer dans le portfolio
+
+Fonctionnalités clés
+--------------------
+- Toggle thème clair/sombre avec persistance localStorage.
+- Compteur de visites local (localStorage) et année dynamique en pied de page.
+- Animations d'entrée au scroll.
+- Carrousel accessible.
+- Filtres combinés statut/catégorie sur les projets.
+- Validation du formulaire contact en temps réel (email + longueurs min), message d'état non envoyant (démo).
+
+Déploiement
+-----------
+Statique : héberger le contenu tel quel (front/ comme racine publique ou avec réécriture simple). Aucun build requis.
