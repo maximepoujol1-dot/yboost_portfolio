@@ -94,6 +94,7 @@ L’IA propose ensuite une version en trois fichiers séparés.
 ## Troisième prompt
 
 > j’aimerai que tu sépare pour une meilleur visibilité et compréhension le projet en trois fichier, un fichier index, qui contient l’ html, une fichier css et enfin un fichier qui contient le javascript
+(répétition de la question pour avoir un prompt correcte qui correspond a ma volonté de base)
 
 ---
 
@@ -175,5 +176,3 @@ L’IA pose ensuite une question de clarification sur le statut de certains proj
 * Cliquer sur **En cours** puis **Toutes** → affiche tous les projets en cours
 
 ---
-
-> **Note finale** : ce document est une mise en forme Markdown fidèle de l’échange avec l’IA, sans réécriture ni ajout de contenu.

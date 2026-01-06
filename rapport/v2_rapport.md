@@ -2,7 +2,8 @@
 
 ## Contexte de réalisation
 
-Le projet **YBOOST Portfolio V2** a été réalisé à l’aide d’une **IA (Notion)**.
+Le projet **YBOOST Portfolio V2** a été réalisé à l’aide d’une **IA (Notion)** et reprend le projet Yboost v1.
+La principale différence reside dans la séparation des différentes catégories sur plusieurs pages.
 Ce document correspond **à un échange réel** avec l’IA, retranscrit et **mis en forme en Markdown**, sans réécriture du fond, afin de conserver un contenu authentique.
 
 ---
@@ -158,4 +159,5 @@ Après la réponse de l’IA :
 
 ---
 
-> **Note** : ce document correspond à une **mise en forme Markdown fidèle de l’échange**, sans modification du contenu ni interprétation.
+
+### Les dernières modification mineure du projet ont été reéalisé à la main.
