@@ -185,3 +185,21 @@ footer {
 	object-fit: cover;
 	display: block;
 }
+
+.brand .avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: var(--shadow);
+}
+
+.hero-photo {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 16px;
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+	display: block;
+}
