@@ -512,3 +512,13 @@ footer {
     box-shadow: var(--shadow);
     display: block;
 }
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrapper .card {
+    width: 100%;
+    max-width: 800px;
+}
