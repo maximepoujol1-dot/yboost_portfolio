@@ -272,9 +272,3 @@ Je te réécris ci‑dessous **tous les fichiers**, avec les changements comment
 - Comme tu as déjà bien isolé ton contenu dans `.container` et `.card`, ces changements n’impactent pas les tailles des encadrés.
 
 Si tu veux, au prochain message, on peut aussi vérifier ensemble ton `main.js` pour voir comment tu gères le compteur de vues et adapter un peu le comportement sur mobile.
-
-### troisième prompt de la v2
-
-> j'ai un dernier problème a résoudre, sur la taille de l'encadrer, il faut qui soit toujours d'une taille importante pour que le remplissage des information soit plus confortable possible. Peux tu reprendre la même demarche que dans le précendent prompt et m'aider a corriger cette erreur.
-
-### troisième réponse de la v2
