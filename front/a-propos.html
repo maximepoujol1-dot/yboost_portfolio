@@ -1,55 +1,62 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>À propos — Maxime Poujol</title>
-	<meta name="description" content="À propos de Maxime Poujol">
-	<link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À propos — Maxime Poujol</title>
+    <meta name="description" content="À propos de Maxime Poujol">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header>
-	<nav class="nav container" aria-label="Navigation principale">
-		<div class="brand">
-			<img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
-			<span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
-		</div>
-		<div class="links" role="menubar" aria-label="Liens de section">
-			<a href="a-propos.html" role="menuitem" aria-current="page">À propos</a>
-			<a href="competences.html" role="menuitem">Compétences</a>
-			<a href="projets.html" role="menuitem">Projets</a>
-			<a href="contact.html" role="menuitem">Contact</a>
-		</div>
-		<div class="actions">
-			<button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
-		</div>
-	</nav>
-</header>
+    <header>
+        <nav class="nav container" aria-label="Navigation principale">
+            <div class="brand">
+                <img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
+                <span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
+            </div>
+            <div class="links" role="menubar" aria-label="Liens de section">
+                <a href="a-propos.html" role="menuitem" aria-current="page">À propos</a>
+                <a href="competences.html" role="menuitem">Compétences</a>
+                <a href="projets.html" role="menuitem">Projets</a>
+                <a href="contact.html" role="menuitem">Contact</a>
+            </div>
+            <div class="actions">
+                <button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+            </div>
+        </nav>
+    </header>
 
-<main class="container">
-	<section class="section" id="a-propos">
-		<h2>À propos</h2>
-		<div class="card reveal">
-			<p>Je m’appelle Maxime. Ce site est en HTML, CSS et JS “vanilla” pour maîtriser les bases.</p>
-			<p>Je suis un étudiant, polyvalent, sérieux et motivé. Habitué à travailler en équipe comme en autonomie, prêt à m’investir pleinement et à développer mes compétences.</p>
-			<p> Référence :</p>
-			<p> - Première année d'étude chez Ynov Bordeaux</p>
-			<p> - Bac général en specialité mathématique et NSI au lycée Fernand Daguin </p>
-			<p> Lien utile :</p>
-			<a href="https://github.com/maximepoujol1-dot">https://github.com/maximepoujol1-dot</a>
+    <main class="container">
+        <section class="section" id="a-propos">
+            <h2>À propos</h2>
+            <div class="card reveal">
+                <p>Je m’appelle Maxime. Ce site est en HTML, CSS et JS “vanilla” pour maîtriser les bases.</p>
+                <p>Je suis un étudiant, polyvalent, sérieux et motivé. Habitué à travailler en équipe comme en autonomie prêt à m’investir pleinement et à développer mes compétences.</p>
+                <p> Référence :</p>
+                <p> - Première année d'étude chez Ynov Bordeaux</p>
+                <p> - Bac général en specialité mathématique et NSI au lycée Fernand Daguin </p>
+                <p> - Assistant professeur en club de judo </p>
+                <p> - Stage en pharmacie </p>
+                <p> Lien utile :</p>
 
-		
-			<p class="help">Astuce: le code inclut carrousel, filtrage, mode sombre et validation.</p>
-		</div>
-	</section>
-</main>
+                <!-- MODIF MINEURE: lien GitHub simplifié pour éviter la syntaxe cassée -->
+                <a href="https://github.com/maximepoujol1-dot" target="_blank" rel="noopener noreferrer">
+                    https://github.com/maximepoujol1-dot
+                </a>
 
-<footer class="container">
-	<div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
-		<span id="footerNote"></span>
-		<span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
-	</div>
-</footer>
-<script src="../assets/js/main.js"></script>
+                <p class="help">Astuce: le code inclut carrousel, filtrage, mode sombre et validation.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- MEME MODIF DE FOOTER QUE SUR INDEX -->
+    <footer>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span id="footerNote"></span>
+            <span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

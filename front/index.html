@@ -1,59 +1,66 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio — Maxime Poujol</title>
-	<meta name="description" content="CV/Portfolio personnel de Maxime Poujol">
-	<link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio — Maxime Poujol</title>
+    <meta name="description" content="CV/Portfolio personnel de Maxime Poujol">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header>
-	<nav class="nav container" aria-label="Navigation principale">
-		<div class="brand">
-			<img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
-			<span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
-		</div>
-		<div class="links" role="menubar" aria-label="Liens de section">
-			<a href="a-propos.html" role="menuitem">À propos</a>
-			<a href="competences.html" role="menuitem">Compétences</a>
-			<a href="projets.html" role="menuitem">Projets</a>
-			<a href="contact.html" role="menuitem">Contact</a>
-		</div>
-		<div class="actions">
-			<button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
-		</div>
-	</nav>
-</header>
+    <!-- HEADER inchangé -->
+    <header>
+        <nav class="nav container" aria-label="Navigation principale">
+            <div class="brand">
+                <img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
+                <span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
+            </div>
+            <div class="links" role="menubar" aria-label="Liens de section">
+                <a href="a-propos.html" role="menuitem">À propos</a>
+                <a href="competences.html" role="menuitem">Compétences</a>
+                <a href="projets.html" role="menuitem">Projets</a>
+                <a href="contact.html" role="menuitem">Contact</a>
+            </div>
+            <div class="actions">
+                <button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+            </div>
+        </nav>
+    </header>
 
-<main class="container">
-	<section class="hero">
-		<div class="hero-card reveal">
-			<span class="badge">Disponible pour alternance · Remote possible</span>
-			<h1>Développeur débutant, motivé et curieux</h1>
-			<p class="lead">Interfaces propres, accessibles et rapides. Projets, compétences et contact ci-dessous.</p>
-			<div class="hero-cta">
-				<a class="btn btn-primary" href="projets.html">Voir mes projets</a>
-				<a class="btn" href="competences.html">Mes compétences</a>
-			</div>
-		</div>
-		<!-- Photo -->
-		<div class="hero-card reveal delay-1">
-			<img
-				src="../assets/images/moi.jpg"
-				alt="Portrait de Maxime Poujol"
-				class="hero-photo"
-			/>
-		</div>
-	</section>
-</main>
+    <!-- MODIF: main reste dans .container mais le layout global est géré en CSS (body flex + main flex:1) -->
+    <main class="container">
+        <section class="hero">
+            <div class="hero-card reveal">
+                <span class="badge">Disponible pour alternance · Remote possible</span>
+                <h1>Développeur débutant, motivé et curieux </h1>
+                <p class="lead">Interfaces propres, accessibles et rapides. Projets, compétences et contact ci-dessous.</p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="projets.html">Voir mes projets</a>
+                    <a class="btn" href="competences.html">Mes compétences</a>
+                </div>
+            </div>
+            <!-- Photo -->
+            <div class="hero-card reveal delay-1">
+                <img
+                    src="../assets/images/moi.jpg"
+                    alt="Portrait de Maxime Poujol"
+                    class="hero-photo"
+                />
+            </div>
+        </section>
+    </main>
 
-<footer class="container">
-	<div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
-		<span id="footerNote"></span>
-		<span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
-	</div>
-</footer>
-<script src="../assets/js/main.js"></script>
+    <!-- MODIF MAJEURE FOOTER:
+         - On enlève class="container" directement sur <footer>
+         - On ajoute une div intérieure .container pour garder le contenu centré
+         - Cela permet au footer de prendre 100% de la largeur de l’écran -->
+    <footer>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span id="footerNote"></span>
+            <span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

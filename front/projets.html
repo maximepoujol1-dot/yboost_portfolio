@@ -1,139 +1,140 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Projets — Maxime Poujol</title>
-	<meta name="description" content="Projets de Maxime Poujol">
-	<link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets — Maxime Poujol</title>
+    <meta name="description" content="Projets de Maxime Poujol">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header>
-	<nav class="nav container" aria-label="Navigation principale">
-		<div class="brand">
-			<img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
-			<span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
-		</div>
-		<div class="links" role="menubar" aria-label="Liens de section">
-			<a href="a-propos.html" role="menuitem">À propos</a>
-			<a href="competences.html" role="menuitem">Compétences</a>
-			<a href="projets.html" role="menuitem" aria-current="page">Projets</a>
-			<a href="contact.html" role="menuitem">Contact</a>
-		</div>
-		<div class="actions">
-			<button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
-		</div>
-	</nav>
-</header>
+    <header>
+        <nav class="nav container" aria-label="Navigation principale">
+            <div class="brand">
+                <img class="avatar" src="../assets/images/moi.jpg" alt="Photo de Maxime Collette Poujol">
+                <span><a href="index.html" role="menuitem"> Maxime Collette Poujol</a></span>
+            </div>
+            <div class="links" role="menubar" aria-label="Liens de section">
+                <a href="a-propos.html" role="menuitem">À propos</a>
+                <a href="competences.html" role="menuitem">Compétences</a>
+                <a href="projets.html" role="menuitem" aria-current="page">Projets</a>
+                <a href="contact.html" role="menuitem">Contact</a>
+            </div>
+            <div class="actions">
+                <button id="themeToggle" class="btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+            </div>
+        </nav>
+    </header>
 
-<main class="container">
-	<section id="projets" class="section">
-		<h2>Projets</h2>
+    <main class="container">
+        <section id="projets" class="section">
+            <h2>Projets</h2>
+            <div class="card reveal">
+                <!-- Filtres par statut -->
+                <div class="filters" id="filters-status" role="tablist" aria-label="Filtrer par statut">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tous</button>
+                    <button class="filter-btn" data-filter="fini" role="tab">Fini</button>
+                    <button class="filter-btn" data-filter="en-cours" role="tab">En cours</button>
+                </div>
 
-		<div class="card reveal">
-			<!-- Filtres par statut -->
-			<div class="filters" id="filters-status" role="tablist" aria-label="Filtrer par statut">
-				<button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tous</button>
-				<button class="filter-btn" data-filter="fini" role="tab">Fini</button>
-				<button class="filter-btn" data-filter="en-cours" role="tab">En cours</button>
-			</div>
+                <!-- Filtres par catégorie -->
+                <div class="filters" id="filters-category" role="tablist" aria-label="Filtrer par catégorie">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Toutes</button>
+                    <button class="filter-btn" data-filter="web" role="tab">Web</button>
+                    <button class="filter-btn" data-filter="reseau" role="tab">Réseau</button>
+                    <button class="filter-btn" data-filter="autres" role="tab">Autres</button>
+                </div>
 
-			<!-- Filtres par catégorie -->
-			<div class="filters" id="filters-category" role="tablist" aria-label="Filtrer par catégorie">
-				<button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Toutes</button>
-				<button class="filter-btn" data-filter="web" role="tab">Web</button>
-				<button class="filter-btn" data-filter="reseau" role="tab">Réseau</button>
-				<button class="filter-btn" data-filter="autres" role="tab">Autres</button>
-			</div>
+                <!-- CARROUSEL avec vraies images -->
+                <div class="carousel" aria-roledescription="carrousel" aria-label="Projets en vedette">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 1 -->
+                        <article class="slide" data-status="fini" data-category="web">
+                            <img class="thumb-img" src="../assets/images/Abyss_fall.png" alt="Projet Red — visuel">
+                            <div>
+                                <h3>Projet Red (Golang)</h3>
+                                <p class="meta">Statut: Fini · Catégorie: Web</p>
+                                <p>Implémentation en Go. Bonnes pratiques, tests de base.</p>
+                            </div>
+                        </article>
 
-			<!-- CARROUSEL avec vraies images -->
-			<div class="carousel" aria-roledescription="carrousel" aria-label="Projets en vedette">
-				<div class="carousel-track" id="carouselTrack">
-					<!-- Slide 1 -->
-					<article class="slide" data-status="fini" data-category="web">
-						<img class="thumb-img" src="../assets/images/Abyss_fall.png" alt="Projet Red — visuel">
-						<div>
-							<h3>Projet Red (Golang)</h3>
-							<p class="meta">Statut: Fini · Catégorie: Web</p>
-							<p>Implémentation en Go. Bonnes pratiques, tests de base.</p>
-						</div>
-					</article>
+                        <!-- Slide 2 -->
+                        <article class="slide" data-status="fini" data-category="web">
+                            <img class="thumb-img" src="../assets/images/Connect.png" alt="Power 4 — visuel">
+                            <div>
+                                <h3>Power 4 (Go)</h3>
+                                <p class="meta">Statut: Fini · Catégorie: Web</p>
+                                <p>Jeu puissance 4 en Go. Gestion du plateau et des conditions de victoire.</p>
+                            </div>
+                        </article>
 
-					<!-- Slide 2 -->
-					<article class="slide" data-status="fini" data-category="web">
-						<img class="thumb-img" src="../assets/images/Connect.png" alt="Power 4 — visuel">
-						<div>
-							<h3>Power 4 (Go)</h3>
-							<p class="meta">Statut: Fini · Catégorie: Web</p>
-							<p>Jeu puissance 4 en Go. Gestion du plateau et des conditions de victoire.</p>
-						</div>
-					</article>
+                        <!-- Slide 3 -->
+                        <article class="slide" data-status="en-cours" data-category="autres">
+                            <img class="thumb-img" src="../assets/images/placeholder.jpg" alt="Golem — image à venir">
+                            <div>
+                                <h3>Golem — Projet Ydays</h3>
+                                <p class="meta">Statut: En cours · Catégorie: Autres</p>
+                                <p>Travail d’équipe, architecture modulaire, itérations rapides.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel-controls" id="carouselDots" aria-label="Choisir la diapositive"></div>
+                </div>
 
-					<!-- Slide 3 -->
-					<article class="slide" data-status="en-cours" data-category="autres">
-						<img class="thumb-img" src="../assets/images/placeholder.jpg" alt="Golem — image à venir">
-						<div>
-							<h3>Golem — Projet Ydays</h3>
-							<p class="meta">Statut: En cours · Catégorie: Autres</p>
-							<p>Travail d’équipe, architecture modulaire, itérations rapides.</p>
-						</div>
-					</article>
-				</div>
-				<div class="carousel-controls" id="carouselDots" aria-label="Choisir la diapositive"></div>
-			</div>
+                <!-- Grille de projets -->
+                <div class="projects-grid" id="projectsGrid" style="margin-top: 12px;">
+                    <article class="project" data-status="fini" data-category="web">
+                        <img class="cover" src="../assets/images/Abyss_fall.png" alt="Vignette du projet Projet Red">
+                        <div class="content">
+                            <h4>Projet Red</h4>
+                            <p class="meta">Golang · Statut: Fini · Catégorie: Web</p>
+                        </div>
+                    </article>
 
-			<!-- Grille de projets (déjà OK avec <img>) -->
-			<div class="projects-grid" id="projectsGrid" style="margin-top: 12px;">
-				<article class="project" data-status="fini" data-category="web">
-					<img class="cover" src="../assets/images/Abyss_fall.png" alt="Vignette du projet Projet Red">
-					<div class="content">
-						<h4>Projet Red</h4>
-						<p class="meta">Golang · Statut: Fini · Catégorie: Web</p>
-					</div>
-				</article>
+                    <article class="project" data-status="fini" data-category="web">
+                        <img class="cover" src="../assets/images/Connect.png" alt="Vignette du projet Power 4 en Go">
+                        <div class="content">
+                            <h4>Power 4</h4>
+                            <p class="meta">Go · Statut: Fini · Catégorie: Web</p>
+                        </div>
+                    </article>
 
-				<article class="project" data-status="fini" data-category="web">
-					<img class="cover" src="../assets/images/Connect.png" alt="Vignette du projet Power 4 en Go">
-					<div class="content">
-						<h4>Power 4</h4>
-						<p class="meta">Go · Statut: Fini · Catégorie: Web</p>
-					</div>
-				</article>
+                    <article class="project" data-status="en-cours" data-category="autres">
+                        <img class="cover" src="../assets/images/placeholder.jpg" alt="Image à venir pour Golem (Ydays)">
+                        <div class="content">
+                            <h4>Golem (Ydays)</h4>
+                            <p class="meta">Collab · Statut: En cours · Catégorie: Autres</p>
+                        </div>
+                    </article>
 
-				<article class="project" data-status="en-cours" data-category="autres">
-					<img class="cover" src="../assets/images/placeholder.jpg" alt="Image à venir pour Golem (Ydays)">
-					<div class="content">
-						<h4>Golem (Ydays)</h4>
-						<p class="meta">Collab · Statut: En cours · Catégorie: Autres</p>
-					</div>
-				</article>
+                    <article class="project" data-status="en-cours" data-category="web">
+                        <img class="cover" src="../assets/images/placeholder.jpg" alt="Image à venir pour Portfolio en Prompt Engineering">
+                        <div class="content">
+                            <h4>Portfolio en Prompt Engineering</h4>
+                            <p class="meta">IA/Prompt · Statut: En cours · Catégorie: Web</p>
+                        </div>
+                    </article>
 
-				<article class="project" data-status="en-cours" data-category="web">
-					<img class="cover" src="../assets/images/placeholder.jpg" alt="Image à venir pour Portfolio en Prompt Engineering">
-					<div class="content">
-						<h4>Portfolio en Prompt Engineering</h4>
-						<p class="meta">IA/Prompt · Statut: En cours · Catégorie: Web</p>
-					</div>
-				</article>
+                    <article class="project" data-status="fini" data-category="reseau">
+                        <img class="cover" src="../assets/images/projet-reseau-power4.jpg" alt="Vignette du projet Réseau Power 4">
+                        <div class="content">
+                            <h4>Projets réseau — Power 4</h4>
+                            <p class="meta">Réseau/Go · Statut: Fini · Catégorie: Réseau</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 
-				<article class="project" data-status="fini" data-category="reseau">
-					<img class="cover" src="../assets/images/projet-reseau-power4.jpg" alt="Vignette du projet Réseau Power 4">
-					<div class="content">
-						<h4>Projets réseau — Power 4</h4>
-						<p class="meta">Réseau/Go · Statut: Fini · Catégorie: Réseau</p>
-					</div>
-				</article>
-			</div>
-		</div>
-	</section>
-</main>
+    <!-- MEME FOOTER -->
+    <footer>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span id="footerNote"></span>
+            <span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
+        </div>
+    </footer>
 
-<footer class="container">
-	<div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
-		<span id="footerNote"></span>
-		<span>Visites sur cet appareil: <strong id="visitCounter">0</strong></span>
-	</div>
-</footer>
-<script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
